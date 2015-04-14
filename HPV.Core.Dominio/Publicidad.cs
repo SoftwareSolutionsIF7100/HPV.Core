@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HPV.Core.Dominio
 {
-    class Publicidad
+    public class Publicidad
     {
         private int idPublicidad;
 

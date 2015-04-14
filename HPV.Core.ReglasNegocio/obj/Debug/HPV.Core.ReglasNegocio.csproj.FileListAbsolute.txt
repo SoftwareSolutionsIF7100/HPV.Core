@@ -1,0 +1,9 @@
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.ReglasNegocio.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.ReglasNegocio.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.AccesoDatos.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.Dominio.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.AccesoDatos.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\bin\Debug\HPV.Core.Dominio.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\obj\Debug\HPV.Core.ReglasNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\obj\Debug\HPV.Core.ReglasNegocio.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.ReglasNegocio\obj\Debug\HPV.Core.ReglasNegocio.pdb

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{88274955-E3D4-47BA-B6E5-0DAC7BF044DB}</ProjectGuid>
+    <ProjectGuid>{EE615BF4-563B-40B2-8B9E-C19093436173}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HPV.Core.Dominio</RootNamespace>
-    <AssemblyName>HPV.Core.Dominio</AssemblyName>
+    <RootNamespace>HPV.Core.ReglasNegocio</RootNamespace>
+    <AssemblyName>HPV.Core.ReglasNegocio</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,21 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Direccion.cs" />
-    <Compile Include="EstadoHabitacion.cs" />
-    <Compile Include="Facilidad.cs" />
-    <Compile Include="Habitacion.cs" />
-    <Compile Include="HabitacionServicio.cs" />
-    <Compile Include="Hotel.cs" />
-    <Compile Include="Imagen.cs" />
-    <Compile Include="Inicio.cs" />
+    <Compile Include="DireccionReglasNegocio.cs" />
+    <Compile Include="HotelReglasNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Publicidad.cs" />
-    <Compile Include="Reservacion.cs" />
-    <Compile Include="Servicio.cs" />
-    <Compile Include="SobreNosotros.cs" />
-    <Compile Include="TipoHabitacion.cs" />
-    <Compile Include="Usuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HPV.Core.AccesoDatos\HPV.Core.AccesoDatos.csproj">
+      <Project>{8c5bec7c-8359-4718-a2e3-44e58767ef81}</Project>
+      <Name>HPV.Core.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HPV.Core.Dominio\HPV.Core.Dominio.csproj">
+      <Project>{88274955-e3d4-47ba-b6e5-0dac7bf044db}</Project>
+      <Name>HPV.Core.Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

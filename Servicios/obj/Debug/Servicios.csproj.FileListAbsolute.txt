@@ -1,0 +1,12 @@
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.dll.config
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.Dominio.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.ReglasNegocio.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.AccesoDatos.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.Dominio.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.ReglasNegocio.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.AccesoDatos.pdb
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.dll
+C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.pdb
