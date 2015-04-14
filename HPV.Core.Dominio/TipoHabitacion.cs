@@ -3,34 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace HPV.Core.Dominio
 {
+    [DataContract]
     public class TipoHabitacion
     {
         private int idTipoHabitacion;
+        private String descripcion;
+        private float tarifa;
+        private String imagen;
 
+        [DataMember]
         public int IdTipoHabitacion
         {
             get { return idTipoHabitacion; }
             set { idTipoHabitacion = value; }
         }
-        private String descripcion;
 
+        [DataMember]
         public String Descripcion
         {
             get { return descripcion; }
             set { descripcion = value; }
         }
-        private float tarifa;
 
+        [DataMember]
         public float Tarifa
         {
             get { return tarifa; }
             set { tarifa = value; }
         }
-        private String imagen;
 
+        [DataMember]
         public String Imagen
         {
             get { return imagen; }

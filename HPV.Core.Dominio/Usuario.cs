@@ -3,77 +3,89 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace HPV.Core.Dominio
 {
+    [DataContract]
     public class Usuario
     {
         private int idUsuario;
+        private String cedula;
+        private String nombre;
+        private String apellido1;
+        private String apellido2;
+        private String email;
+        private String telefono;
+        private String username;
+        private String contrasenna;
+        private String avatar;
 
+        [DataMember]
         public int IdUsuario
         {
             get { return idUsuario; }
             set { idUsuario = value; }
         }
 
-        private String cedula;
 
+        [DataMember]
         public String Cedula
         {
             get { return cedula; }
             set { cedula = value; }
         }
-        private String nombre;
 
+        [DataMember]
         public String Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
-        private String apellido1;
 
+        [DataMember]
         public String Apellido1
         {
             get { return apellido1; }
             set { apellido1 = value; }
         }
-        private String apellido2;
 
+        [DataMember]
         public String Apellido2
         {
             get { return apellido2; }
             set { apellido2 = value; }
         }
-        private String email;
 
+        [DataMember]
         public String Email
         {
             get { return email; }
             set { email = value; }
         }
-        private String telefono;
 
+        [DataMember]
         public String Telefono
         {
             get { return telefono; }
             set { telefono = value; }
         }
-        private String username;
 
+        [DataMember]
         public String Username
         {
             get { return username; }
             set { username = value; }
         }
-        private String contrasenna;
 
+        [DataMember]
         public String Contrasenna
         {
             get { return contrasenna; }
             set { contrasenna = value; }
         }
-        private String avatar;
 
+        [DataMember]
         public String Avatar
         {
             get { return avatar; }
@@ -93,6 +105,20 @@ namespace HPV.Core.Dominio
             this.username = username;
             this.contrasenna = contrasenna;
             this.avatar = avatar;
+        }
+
+        public Usuario()
+        {
+            this.idUsuario = 0;
+            this.cedula = "";
+            this.nombre = "";
+            this.apellido1 = "";
+            this.apellido2 = "";
+            this.email = "";
+            this.telefono = "";
+            this.username = "";
+            this.contrasenna = "";
+            this.avatar = "";
         }
 
     }
