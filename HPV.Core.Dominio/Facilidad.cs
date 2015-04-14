@@ -3,27 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace HPV.Core.Dominio
 {
+    [DataContract]
     public class Facilidad
     {
         private int idFacilidad;
+        private String descripcion;
+        private String imagen;
 
+        [DataMember]
         public int IdFacilidad
         {
             get { return idFacilidad; }
             set { idFacilidad = value; }
         }
-        private String descripcion;
 
+        [DataMember]
         public String Descripcion
         {
             get { return descripcion; }
             set { descripcion = value; }
         }
-        private String imagen;
-
+        
+        [DataMember]
         public String Imagen
         {
             get { return imagen; }
@@ -37,6 +42,11 @@ namespace HPV.Core.Dominio
             this.imagen = imagen;
         }
 
-       
+        public Facilidad()
+        {
+            this.idFacilidad = 0;
+            this.descripcion = "";
+            this.imagen = "";
+        }
     }
 }

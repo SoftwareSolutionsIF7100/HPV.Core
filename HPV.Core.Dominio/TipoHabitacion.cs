@@ -44,5 +44,13 @@ namespace HPV.Core.Dominio
             this.tarifa = tarifa;
             this.imagen = imagen;
         }
+
+        public TipoHabitacion() 
+        {
+            this.idTipoHabitacion = 0;
+            this.descripcion = "";
+            this.tarifa = 0;
+            this.imagen = "";
+        }
     }
 }

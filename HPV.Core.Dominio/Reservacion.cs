@@ -3,83 +3,97 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace HPV.Core.Dominio
 {
+    [DataContract]
     public class Reservacion
     {
-        private int idReservacion;
 
+        private int idReservacion;
+        private String codigoReserva;
+        private String fechaCreacion;
+        private String nombre;
+        private String apellidos;
+        private String email;
+        private String tarjeta;
+        private String transaccion;
+        private String fechaLlegada;
+        private String fechaSalida;
+        private Boolean eliminado;
+
+        [DataMember]
         public int IdReservacion
         {
             get { return idReservacion; }
             set { idReservacion = value; }
         }
-        private String codigoReserva;
 
+        [DataMember]
         public String CodigoReserva
         {
             get { return codigoReserva; }
             set { codigoReserva = value; }
         }
-        private String fechaCreacion;
 
+        [DataMember]
         public String FechaCreacion
         {
             get { return fechaCreacion; }
             set { fechaCreacion = value; }
         }
-        private String nombre;
 
+        [DataMember]
         public String Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
-        private String apellidos;
 
+        [DataMember]
         public String Apellidos
         {
             get { return apellidos; }
             set { apellidos = value; }
         }
-        private String email;
 
+        [DataMember]
         public String Email
         {
             get { return email; }
             set { email = value; }
         }
-        private String tarjeta;
 
+        [DataMember]
         public String Tarjeta
         {
             get { return tarjeta; }
             set { tarjeta = value; }
         }
-        private String transaccion;
 
+        [DataMember]
         public String Transaccion
         {
             get { return transaccion; }
             set { transaccion = value; }
         }
-        private String fechaLlegada;
 
+        [DataMember]
         public String FechaLlegada
         {
             get { return fechaLlegada; }
             set { fechaLlegada = value; }
         }
-        private String fechaSalida;
 
+        [DataMember]
         public String FechaSalida
         {
             get { return fechaSalida; }
             set { fechaSalida = value; }
         }
-        private Boolean eliminado;
 
+        [DataMember]
         public Boolean Eliminado
         {
             get { return eliminado; }
@@ -100,6 +114,21 @@ namespace HPV.Core.Dominio
             this.fechaLlegada = fechaLLegada;
             this.fechaSalida = fechaSalida;
             this.eliminado = eliminado;
+        }
+
+        public Reservacion()
+        {
+            this.idReservacion = 0;
+            this.codigoReserva = "";
+            this.fechaCreacion = "";
+            this.nombre = "";
+            this.apellidos = "";
+            this.email = "";
+            this.tarjeta = "";
+            this.transaccion = "";
+            this.fechaLlegada = "";
+            this.fechaSalida = "";
+            this.eliminado = false;
         }
     }
 }

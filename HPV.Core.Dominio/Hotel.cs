@@ -36,6 +36,18 @@ namespace HPV.Core.Dominio
 
         }
 
+        public Hotel()
+        {
+            this.idHotel = 0;
+            this.nombreHotel = "";
+            this.checkIn = "";
+            this.checkOut = "";
+            this.telefono1 = "";
+            this.telefono2 = "";
+            this.email = "";
+            this.apartadoPostal = "";
+        }
+
         [DataMember]
         public int IdHotel
         {

@@ -32,5 +32,11 @@ namespace HPV.Core.Dominio
             this.idEstado = 0;
             this.descripcion = "";
         }
+
+        public EstadoHabitacion(int idEstado, String descripcion)
+        {
+            this.idEstado = idEstado;
+            this.descripcion = descripcion;
+        }
     }
 }
