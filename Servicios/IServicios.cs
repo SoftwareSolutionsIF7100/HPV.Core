@@ -12,10 +12,26 @@ namespace Servicios
     [ServiceContract]
     public interface IServicios
     {
+        //metodos hotel
         [OperationContract]
         int modificarHotel(Hotel hotel);
 
+        //metodos direccion
         [OperationContract]
         Direccion obtenerDireccion();
+        [OperationContract]
+        int modificarDireccion(Direccion direccion);
+
+        //metodos publicidad
+        [OperationContract]
+        int insertarPublicidad(Publicidad publicidad);
+        [OperationContract]
+        int modificarPublicidad(Publicidad publicidad);
+        [OperationContract]
+        int eliminarPublicidad(int idPubliciad);
+        [OperationContract]
+        Publicidad obtenerPublicidad(int idPublicidad);
+        [OperationContract]
+        List<Publicidad> obtenerPublicidades();
     }
 }

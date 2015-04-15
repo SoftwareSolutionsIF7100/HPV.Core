@@ -23,5 +23,11 @@ namespace HPV.Core.ReglasNegocio
 
         }
 
+          //actualizar Direccion
+        public int modificarDireccion(Direccion direccion)
+        {
+            return this.direccionAD.modificarDireccion(direccion);
+        }
+
     }
 }

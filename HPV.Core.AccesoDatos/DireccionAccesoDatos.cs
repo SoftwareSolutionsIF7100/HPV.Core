@@ -69,5 +69,40 @@ namespace HPV.Core.AccesoDatos
                 return null;
             }
         }
+
+        //actualizar Direccion
+        public int modificarDireccion(Direccion direccion)
+        {
+            //cooneccion con bd
+            SqlConnection myConnection = new SqlConnection(this.stringConexion);
+
+            //query
+            string sqlStoredProcedure = "sp_direccion_modificar";
+            SqlCommand sqlCommand = new SqlCommand(sqlStoredProcedure, myConnection);
+
+            //configuracion sqlcommand 
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+
+            //crear parametros
+            sqlCommand.Parameters.Add(new SqlParameter("@idDireccion", direccion.IdDireccion));
+            sqlCommand.Parameters.Add(new SqlParameter("@descripcion", direccion.Descripcion));
+            sqlCommand.Parameters.Add(new SqlParameter("@latitud", direccion.Latitud));
+            sqlCommand.Parameters.Add(new SqlParameter("@longitud", direccion.Longitud));
+
+            try
+            {
+                //ejcuta sp
+                sqlCommand.Connection.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlCommand.Connection.Close();
+            }
+            catch (SqlException ex)
+            {
+                sqlCommand.Connection.Close();
+                return ex.ErrorCode;
+            }
+
+            return 1;
+        }
     }
 }
