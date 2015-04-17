@@ -42,6 +42,7 @@
     <Compile Include="DireccionReglasNegocio.cs" />
     <Compile Include="HotelReglasNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicidadReglasNegocio.cs" />
     <Compile Include="UsuarioReglasNegocio.cs" />
   </ItemGroup>
   <ItemGroup>

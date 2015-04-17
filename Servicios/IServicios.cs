@@ -17,8 +17,22 @@ namespace Servicios
 
         [OperationContract]
         Direccion obtenerDireccion();
+        [OperationContract]
+        int modificarDireccion(Direccion direccion);
 
         [OperationContract]
         Usuario validarUsuario(String username, String contrasenna);
+
+        //metodos publicidad
+        [OperationContract]
+        int insertarPublicidad(Publicidad publicidad);
+        [OperationContract]
+        int modificarPublicidad(Publicidad publicidad);
+        [OperationContract]
+        int eliminarPublicidad(int idPubliciad);
+        [OperationContract]
+        Publicidad obtenerPublicidad(int idPublicidad);
+        [OperationContract]
+        List<Publicidad> obtenerPublicidades();
     }
 }
