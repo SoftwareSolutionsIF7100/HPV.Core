@@ -27,7 +27,7 @@ namespace HPV.Core.AccesoDatos
                 SqlConnection sqlConnection = new SqlConnection(this.stringConexion);
 
                 //define la consulta
-                string sqlSelect = "SELECT * FROM usuario Where username=" + username + " and contrasenna=" + contrasenna;
+                string sqlSelect = "SELECT * FROM Usuario WHERE username = '" + username + "' and contrasenna = '" + contrasenna + "'";
 
                 //crea un adapter
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
