@@ -2,3 +2,4 @@ C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.Dominio
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.Dominio\bin\Debug\HPV.Core.Dominio.pdb
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.Dominio\obj\Debug\HPV.Core.Dominio.dll
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\HPV.Core.Dominio\obj\Debug\HPV.Core.Dominio.pdb
+C:\Users\Gustavo\Documents\Visual Studio 2012\Projects\HPV.Core\HPV.Core.Dominio\obj\Debug\HPV.Core.Dominio.csprojResolveAssemblyReference.cache

@@ -27,7 +27,7 @@ namespace HPV.Core.AccesoDatos
                 SqlConnection sqlConnection = new SqlConnection(this.stringConexion);
 
                 //define la consulta
-                string sqlSelect = "SELECT top 1 * FROM direccion ORDER BY idDireccion ASC";
+                string sqlSelect = "SELECT top 1 * FROM direccion d, seccion s where s.idSeccion = d.idSeccion ORDER BY idDireccion ASC";
 
                 //crea un adapter
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
@@ -38,17 +38,17 @@ namespace HPV.Core.AccesoDatos
                 sqlDataAdapter.SelectCommand.Connection = sqlConnection;
 
                 //dataSet para almacenar resultados
-                DataSet dataSetGenders = new DataSet();
+                DataSet dataSet = new DataSet();
 
                 //ejecutar consulta
-                sqlDataAdapter.Fill(dataSetGenders, "Direccion");
+                sqlDataAdapter.Fill(dataSet, "Direccion");
 
                 //cerrar conexion
                 sqlDataAdapter.SelectCommand.Connection.Close();
 
                 /*---------------------------------------------*/
                 //obtenere filas de data set 
-                DataRowCollection rows = dataSetGenders.Tables["Direccion"].Rows;
+                DataRowCollection rows = dataSet.Tables["Direccion"].Rows;
 
                 //crear objeto
                 Direccion direccion = new Direccion();
@@ -57,7 +57,8 @@ namespace HPV.Core.AccesoDatos
                 {
                     //asignar los valores a objetos
                     direccion.IdDireccion = int.Parse(currentRow["idDireccion"].ToString());
-                    direccion.Descripcion = currentRow["descripcion"].ToString();
+                    direccion.Seccion.IdSeccion = int.Parse(currentRow["idSeccion"].ToString());
+                    direccion.Seccion.Descripcion = currentRow["descripcion"].ToString();
                     direccion.Latitud = float.Parse(currentRow["latitud"].ToString());
                     direccion.Longitud = float.Parse(currentRow["longitud"].ToString());
                 }
@@ -84,8 +85,7 @@ namespace HPV.Core.AccesoDatos
             sqlCommand.CommandType = CommandType.StoredProcedure;
 
             //crear parametros
-            sqlCommand.Parameters.Add(new SqlParameter("@idDireccion", direccion.IdDireccion));
-            sqlCommand.Parameters.Add(new SqlParameter("@descripcion", direccion.Descripcion));
+            sqlCommand.Parameters.Add(new SqlParameter("@idDireccion", direccion.IdPagina));
             sqlCommand.Parameters.Add(new SqlParameter("@latitud", direccion.Latitud));
             sqlCommand.Parameters.Add(new SqlParameter("@longitud", direccion.Longitud));
 

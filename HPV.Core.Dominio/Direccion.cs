@@ -11,24 +11,31 @@ namespace HPV.Core.Dominio
     public class Direccion
     {
         private int idDireccion;
-        private string descripcion;
+        private Seccion seccion;
         private float latitud;
         private float longitud;
 
         public Direccion()
         {
             this.idDireccion = 0;
-            this.descripcion = "";
+            this.seccion = new Seccion();
             this.latitud = 0;
             this.longitud = 0;
         }
 
-        public Direccion(int idDireccion, String descripcion,float latitud,float longitud)
+        public Direccion(int idDireccion, Seccion seccion, float latitud, float longitud)
         {
             this.idDireccion = idDireccion;
-            this.descripcion = descripcion;
+            this.seccion = seccion;
             this.latitud = latitud;
             this.longitud = longitud;
+        }
+
+        [DataMember]
+        public Seccion Seccion
+        {
+            get { return seccion; }
+            set { seccion = value; }
         }
 
         [DataMember]
@@ -36,13 +43,6 @@ namespace HPV.Core.Dominio
         {
             get { return idDireccion; }
             set { idDireccion = value; }
-        }
-
-        [DataMember]
-        public string Descripcion
-        {
-            get { return descripcion; }
-            set { descripcion = value; }
         }
 
         [DataMember]
