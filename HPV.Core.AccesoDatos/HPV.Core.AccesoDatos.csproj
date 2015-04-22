@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DireccionAccesoDatos.cs" />
     <Compile Include="HotelAccesoDatos.cs" />
+    <Compile Include="PaginaAccesoDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicidadAccesoDatos.cs" />
     <Compile Include="UsuarioAccesoDatos.cs" />

@@ -12,6 +12,8 @@ namespace HPV.Core.Dominio
     {
         private int idPagina;
         private String descripcion;
+        private Imagen imagen;
+
 
         [DataMember]
         public String Descripcion
@@ -27,16 +29,24 @@ namespace HPV.Core.Dominio
             set { idPagina = value; }
         }
 
+        [DataMember]
+        public Imagen Imagen {
+            get { return imagen; }
+            set { imagen = value; }
+        }
+
         public Pagina()
         {
             this.idPagina = 0;
             this.descripcion = "";
+            this.imagen = null;
         }
 
-        public Pagina(int idPagina, String descripcion)
+        public Pagina(int idPagina, String descripcion, Imagen imagen)
         {
-            this.idPagina = 0;
-            this.descripcion = "";
+            this.idPagina = idPagina;
+            this.descripcion = descripcion;
+            this.imagen = imagen;
         }
     }
 }

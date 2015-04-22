@@ -10,3 +10,15 @@ C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\De
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.AccesoDatos.pdb
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.dll
 C:\Users\Gustavo\documents\visual studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.pdb
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.dll.config
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.dll
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\Servicios.pdb
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.Dominio.dll
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.ReglasNegocio.dll
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.AccesoDatos.dll
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.Dominio.pdb
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.ReglasNegocio.pdb
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\bin\Debug\HPV.Core.AccesoDatos.pdb
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.dll
+C:\Users\Mago\Documents\Visual Studio 2012\Projects\HPV.Core\Servicios\obj\Debug\Servicios.pdb
